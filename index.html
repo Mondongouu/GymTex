@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutina de Piernas - Gimnasio</title>
+    <link rel="icon" href="https://media.istockphoto.com/id/1499989647/es/vector/fitness-con-barra.jpg?s=612x612&w=0&k=20&c=SY6h_Ost9MpEPifMgr1xmCzcN0m_WLkBzi8I-W2g7HQ=">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 5px solid #4CAF50;
+        }
+
+        header img {
+            width: 50px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        h1 {
+            display: inline-block;
+            font-size: 2em;
+            margin: 0;
+        }
+
+        /* Estilos de la tabla */
+        table {
+            width: 80%;
+            margin: 40px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover td {
+            background-color: #f1f1f1;
+        }
+
+        /* Botón de acción */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2d3e50;
+            color: white;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con logo -->
+    <header>
+        <img src="https://media.istockphoto.com/id/1499989647/es/vector/fitness-con-barra.jpg?s=612x612&w=0&k=20&c=SY6h_Ost9MpEPifMgr1xmCzcN0m_WLkBzi8I-W2g7HQ=" alt="Logo">
+        <h1>Rutina de Piernas en el Gimnasio</h1>
+    </header>
+
+    <!-- Tabla con la rutina -->
+    <table>
+        <thead>
+            <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+                <th>Descanso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sentadillas</td>
+                <td>4</td>
+                <td>12-15</td>
+                <td>60-90 segundos</td>
+            </tr>
+            <tr>
+                <td>Prensa de Piernas</td>
+                <td>4</td>
+                <td>10-12</td>
+                <td>60 segundos</td>
+            </tr>
+            <tr>
+                <td>Elevación de Talones (Gemelos)</td>
+                <td>3</td>
+                <td>15-20</td>
+                <td>45-60 segundos</td>
+            </tr>
+            <tr>
+                <td><span id="lunges">Lunges</span> con Mancuernas</td>
+                <td>3</td>
+                <td>10-12 por pierna</td>
+                <td>60-90 segundos</td>
+            </tr>
+            <tr>
+                <td>Extensiones de Pierna</td>
+                <td>3</td>
+                <td>12-15</td>
+                <td>60 segundos</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Botón de acción -->
+    <div style="text-align: center;">
+        <button>Comienza tu Rutina</button>
+    </div>
+    <script>
+        let lunges = document.getElementById("lunges");
+        lunges.textContent = "Sumo"
+    </script>
+</body>
+</html>
